@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>会員登録</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header></header>
+
+        <main>
+            <h1>会員登録</h1>
+            <form action="#" method="post">
+                <!-- inputタグが横並びにならないように、縦並びにする為のdivタグ -->
+                <div>
+                    <label>メールアドレス</label>
+                    <input type="text" name="email">
+                </div>
+
+                <div>
+                    <label>名前</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div>
+                    <label>ニックネーム</label>
+                    <input type="text" name="nickname" placeholder="任意のニックネームを入力してください">
+                </div>
+
+                <div>
+                    <label>パスワード</label>
+                    <input type="password" name="password">
+                </div>
+
+                <div>
+                    <!-- placeholder属性に注意して欲しい点や書き方のヒントを入力する -->
+                    <label>パスワード確認</label>
+                    <input type="password" name="password_confirmation" placeholder="同じパスワードを再度入力してください">
+                </div>
+
+                <div>
+                    <label>入会コース</label>
+                    <!-- select:プルダウン方式の入力 optionタグで要素を追加-->
+                    <select name="course">
+                        <option value="1">体験コース</option>
+                        <option value="2">独学応援コース</option>
+                        <option value="3">スクールコース</option>
+                        <option value="4">エンジニアチーム養成コース</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="送信">
+                </div>
+
+                <h2>入会コース</h2>
+                <table>
+                    <tr>
+                        <th>コース名</th>                   <th>期間</th>       <th>対応人数</th>    <th>料金</th>
+                    </tr>
+                    <tr>
+                        <td>体験コース</td>                 <td>１週間</td>     <td>１名</td>       <td>無料</td>
+                    </tr>
+                    <tr>
+                        <td>独学応援コース</td>             <td>1ヵ月</td>      <td>１名</td>       <td>３万円/月</td>
+                    </tr>
+                    <tr>
+                        <td>スクールコース</td>             <td>３ヵ月～</td>   <td>１名</td>       <td>６万円/月</td>
+                    </tr>
+                    <tr>
+                        <td>エンジニアチーム養成コース</td>  <td>６ヵ月～</td>   <td>２名～</td>     <td>１０万円/月</td>
+                    </tr>
+                </table>
+
+            </form>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

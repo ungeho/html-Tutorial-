@@ -1,0 +1,30 @@
+/* h1タグ全てが対象 */
+h1{
+    /* 文字部分の背景色 */
+    background-color: blue;
+    /* 文字の色 */
+    /* 同じ装飾が存在する場合、下の方が優先される（上書き？） */
+    color: red;
+    color: white;
+    /* 左側に余白を作る */
+    padding-left: 10px;
+}
+
+/* smallクラス全てが対象 */
+.small{
+    font-size: 11px;
+}
+
+/* divタグのnormalクラスの中のpタグ */
+div.normal p{
+    font-size: 16px
+}
+
+/* divタグの中のaタグ */
+div a{
+    font-size: 14px
+}
+
+main{
+    background-color: rgb(245, 206, 236);
+}

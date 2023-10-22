@@ -1,0 +1,31 @@
+<!--
+    ul/li：リストを作る時のタグ 必ずセット
+    ulタグ:リストを囲むリスト全体を作るタグ
+    liタグ：リスト一つ一つの要素としてのタグ
+-->
+
+
+<ul>
+    <li>りんご</li>
+    <li>ゴリラ</li>
+    <li>ラッパ</li>
+</ul>
+
+<!-- 基本的には黒丸を表示させない形で使う -->
+
+<ul class="none-point">
+    <li class="border">りんご</li>
+    <li class="border">ゴリラ</li>
+    <li class="border">ラッパ</li>
+</ul>
+
+<style>
+    ul.none-point{
+        list-style: none;
+    }
+    li.border{
+        padding-left: 10px;
+        margin-top: 20px;
+        border-bottom: 1px solid rgb(184, 184, 184);
+    }
+</style>

@@ -1,0 +1,11 @@
+<!--
+    formタグ：入力された値の送信先をどのように決めるかを記述する
+-->
+
+<!-- method属性は基本post action属性は送り先のurl -->
+<form action="create" method="post">
+    <label>ブログタイトル</label>
+    <input type="text" name="blog_title">
+    <!-- type="subbmit" で入力ではなく送信ボタンとして表示される。 value属性はボタンに表示する文字-->
+    <input type="submit" value="送信">
+</form>
