@@ -1,0 +1,16 @@
+ul{
+    /* リストはデフォルトで余白が余分についてくるのでそれを0にする */
+    padding: 0;
+    margin: 0;
+    /* ●をつけない */
+    list-style: none;
+}
+
+li{
+    /* 下に灰色の1pxの太さの直線を引く */
+    border-bottom: solid 1px gray;
+    /* 余白（内側）5px */
+    padding: 5px;
+    /* 余白（外側）10px */
+    margin-top: 10px;
+}

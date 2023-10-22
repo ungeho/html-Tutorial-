@@ -1,3 +1,10 @@
+/* 
+・block要素：画面上の１行を占有するタグ
+    h1~h6,div,p,ul,li,imgなど
+・inline要素：画面上の１行を占有しない（改行しない）タグ
+    a,spamなど
+*/
+
 /* h1タグ全てが対象 */
 h1{
     /* 文字部分の背景色 */
@@ -8,6 +15,20 @@ h1{
     color: white;
     /* 左側に余白を作る */
     padding-left: 10px;
+    /* 上側に余白（内側の余白）を作る */
+    padding-top: 20px;
+    /* 上側に余白（外側の余白）を作る */
+    margin-top: 50px;
+    /* 下側に余白（外側の余白）を作る */
+    margin-bottom: 50px;
+    /* borderはpadding（内側の余白）とmargin（外側の余白）の境界線 */
+    /* solidは線の種類を直線にする事を表す。 3pxは線の太さ redは赤色 */
+    border: solid 3px red;
+    /* 方向を指定しないと、全方向に余白が適用される。また、上記のpaddingは上書きされる */
+    padding: 20px;
+    /* 他のタグと距離をとりたいときは margin
+        自分自身の中に余裕を持ちたい時は padding を使う
+    */
 }
 
 /* smallクラス全てが対象 */

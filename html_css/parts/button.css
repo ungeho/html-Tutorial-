@@ -1,0 +1,32 @@
+a{
+    /* 背景色 */
+    background-color: pink;
+    /* 余白（内側）なので背景色も広がる */
+    padding: 15px;
+    /* リンクの下付きの線がなくなる */
+    text-decoration: none;
+    /* 文字色 */
+    color: white;
+    /* marginとpaddingの境界を丸みを帯びた形で18pxの大きさに設定する */
+    /* 数字が大きいほど丸くなる */
+    border-radius: 18px;
+    /* paddingの範囲（境界線の一部？）に影を付けて立体的に見せる */
+    box-shadow: 2px 2px lightgrey;
+}
+
+
+button{
+    background-color: pink;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 18px;
+    box-shadow: 2px 2px lightgrey;
+    /* buttonタグにはborderが設定されている為、それをnoneにする必要がある。 */
+    border:none;
+}
+
+/* マウスが重なっている間に適用される疑似クラス */
+a:hover{
+    background-color: lightpink;
+}

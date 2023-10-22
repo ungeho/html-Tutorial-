@@ -1,0 +1,35 @@
+table{
+    /* 行に線を引く為に必要な設定 */
+    border-collapse: collapse;
+}
+
+/* table-row 行の設定 */
+tr{
+    /* 灰色の線を下に引く */
+    border-bottom: solid 1px lightgray;
+}
+
+
+/* テーブルヘッダー */
+th{
+    /* 列の幅を固定にして余裕を持たせる */
+    width: 150px;
+}
+
+/* テーブルの要素 */
+td{
+    /* 中央揃え */
+    text-align: center;
+    /* 上側に内側の余白 */
+    padding-top: 20px;
+}
+
+/* コースの幅を個別に変更 */
+.course{
+    width: 250px;
+}
+
+/* 対応人数の幅を個別に変更 */
+.capacity{
+    width: 80px;
+}

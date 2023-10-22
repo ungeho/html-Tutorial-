@@ -1,0 +1,20 @@
+input{
+    /* 横幅 */
+    width: 300px;
+    /* border非表示 */
+    border: none;
+    /* borderの下部分に直線を引く */
+    border-bottom: solid 1px lightgray;
+    /* 内側に余白 */
+    padding: 10px;
+}
+
+/* 入力状態になった時のスタイルの疑似クラス */
+/* セレクタ:疑似クラス名 で指定 */
+input:focus{
+    /* 入力時の枠はborderではなくoutline */
+    outline: none;
+    /* 入力時にborderの下側に水色の線を引く */
+    border-bottom: solid 1px aqua;
+}
+
