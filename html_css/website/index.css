@@ -1,0 +1,170 @@
+body{
+    /* body部分の余白をなくし、全面をbodyに */
+    margin: 0px;
+    /* body部分の背景色を薄い桃色に */
+    background-color: rgb(248, 238, 238);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+header{
+    /* ヘッダー部分を白に */
+    background-color:rgb(253, 249, 249);
+    /* ヘッダー部分に余白をつける */
+    padding: 8px;
+}
+
+
+header p{
+    /* ヘッダーのテキストを中央寄せ */
+    text-align: center;
+    /* marginを一旦全て0pxにし、下に少し余白をつける */
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+/* body説明書き部分 */
+.container{
+    /* widthとmargin 0 auto はセット*/
+    /* 中央揃え */
+    width: 800px;
+    margin: 0 auto;
+    /* 内側の余白を上下10,左右20px */
+    padding: 10px 20px;
+    /* 背景色を白に */
+    background-color: white;
+}
+
+/* お知らせ部分を赤枠で囲む*/
+.notice{
+    padding: 10px;
+    border: solid 2px red;
+}
+
+/* 注意書き部分の文字を大きくし、文字色を赤色にして目立たせる */
+p.warning{
+    color: red;
+    font-size: 18px;
+}
+
+/* 情報のリンク */
+/* 余白をつけ、背景色をつけうｒ */
+.information-links li{
+    margin-bottom: 4px;
+    padding: 2px 8px;
+    background-color: rgb(238, 237, 237);
+}
+
+/* リンクの文字色を赤色に */
+.information-links li a{
+    color:red;
+}
+
+/* タクトミ様の受付画面です。 */
+h2{
+    /* 背景色を青に */
+    background-color: #46b8ec;
+    /* 影をつける */
+    box-shadow: 2px 2px #a9a9a9;
+    /* 丸みをつける */
+    border-radius: 8px;
+    /* 文字を中央揃え */
+    text-align: center;
+    /* 文字色を白に */
+    color:white;
+    /* 文字の大きさを20pxに */
+    font-size: 20px;
+    /* h2はデフォルトで太文字の為、細くする。 */
+    font-weight: 100;
+}
+
+/* 受付動作のリンク */
+.action-links li{
+    /* 背景色を白 */
+    background-color: rgb(245 245 245);
+    /* 枠線を灰色の直線で引く */
+    border: solid 1px rgb(190, 190, 190);
+    padding: 3px;
+}
+
+.action-links li a{
+    /* 本来inlineのaタグをblock要素にして縦に並べる */
+    display: block;
+    /* 内側の余白をつけ、リンク自体の判定ごと大きくする */
+    padding: 5px 23px;
+    /* 文字を大きくする */
+    font-size: 23px;
+    /* 文字色を黒に */
+    color: black;
+    /* リンクの下線を消す */
+    text-decoration: none;
+}
+
+/* :first-childは、同じ種類のタグが並んでいる場合、最初の要素を指定する。 */
+/* 今回の場合、一番上の受付ボタンがターゲット */
+.action-links li:first-child{
+    /* 一部の角だけ丸くしたい場合 */
+    /* border-radius: 左上,右上,右下,左下 で指定 */
+    border-radius: 8px 8px 0px 0px;
+}
+
+/* :last-childは最後の要素 */
+/* 今回の場合、本日の診療状況ボタンがターゲットになる */
+.action-links li:last-child{
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* ナビゲーションリンクのリスト全体 */
+.navigation-links ul{
+    /* flexboxの設定 */
+    /* 横ならび */
+    display: flex;
+    /* 折り返し */
+    flex-wrap: wrap;
+    /* 等間隔 */
+    justify-content: space-between;
+    /* ここまでがflexbox */
+    /* 少し左右に余白 */
+    padding: 0px 10px;
+}
+
+/* ナビゲーションリンクのリストの要素 */
+.navigation-links li{
+    /* 横に二つずつ並べたい。そこで、親要素の半分くらいの大きさの幅に設定 */
+    width: 49%;
+    /* 下への余白を少しつける */
+    margin-bottom: 5px;
+    border: solid 1px rgb(190, 190, 190);
+}
+
+/* ナビゲーションリンクのリンク部分 */
+.navigation-links li a{
+    /* 四角形全体をリンク対象にする為、block要素にする */
+    display: block;
+    padding: 10px;
+    color: black;
+    /* リンクの下線を消す */
+    text-decoration: none;
+}
+
+.navigation-links li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/* フッターの背景色と余白 */
+footer{
+    background-color: rgb(253, 249, 249);
+    padding: 8px;
+}
+
+/* 文字を中央揃えにし、余白をつける */
+footer p{
+    text-align: center;
+    margin: 0px 10px;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,67 @@
+ul{
+    /* リストの点を削除 */
+    list-style: none;
+}
+
+li{
+    /* リストの要素の境界にグレーの下線 */
+    border-bottom: solid 1px gray;
+    /* 内側の余白 縦5px 横20px */
+    padding: 5px 20px;
+    /* 外側の余白 全て10px */
+    margin-bottom: 10px;
+}
+
+/* それぞれの要素を固定幅にする為にspanを使う */
+/* spanで囲んだ部分をinline-blockに */
+span{
+    /* 通常inlineの為、幅を指定出来ないspanをinline-blockにする */
+    /* blockでもinlineでもない */
+    display: inline-block;
+}
+
+/* 名前部分のブロックの幅を100pxに固定 */
+.name{
+    width: 200px;
+}
+
+/* メール部分のブロック幅を350pxに固定 */
+.email{
+    width: 350px;
+}
+
+/* ボタン部分のリンク */
+.buttons a{
+    /* 背景色を設定 */
+    background-color: cornflowerblue;
+    /* 余白 */
+    padding: 5px 15px;
+    /* リンクの下線を無効化 */
+    text-decoration: none;
+    /* 文字の色を白に */
+    color: white;
+    /* 境界を丸くする */
+    border-radius: 5px;
+    /* ボタンに影をつける */
+    box-shadow: 1px 1px lightgray;
+    /* 境界を初期値に */
+    border: none;
+    /* ボタン同士に少し余白をつける */
+    margin-right: 5px;
+}
+
+/* 編集ボタン */
+.buttons .edit{
+    /* 背景色を変更 */
+    background-color: lightcoral;
+}
+
+/* 削除ボタン */
+.buttons .delete{
+    background-color: #32a852;
+}
+
+/* 登録ボタン */
+.buttons .registration{
+    background-color: rgb(180, 206, 37);
+}

@@ -1,0 +1,79 @@
+main{
+    /* mainの要素全体を中央揃え */
+    width: 500px;
+    margin: auto;
+}
+
+/* formの上にある見出しとの余白をあける */
+form{
+    margin-top: 80px;
+}
+
+/* formの要素全て */
+.form-group{
+    /* 下にある次のform要素との余白をあける */
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    /* ラベルと入力部分が横並びにならないようにblock要素に変更 */
+    display: block;
+}
+
+/* inputのtypeも指定してCSSを適用する事が出来る。 */
+/* ,で区切る事で、複数の要素にCSSを適用する事が出来る。 */
+.form-group input[type="text"], .form-group input[type="number"]{
+    /* 幅を100%に */
+    width: 100%;
+    /* inputの境界にある枠線を消す */
+    border: none;
+    /* 境界の下部分に線を引き、入力部分がわかるようにする */
+    border-bottom: solid 1px lightgray;
+    /* 内側の余白を広げ、入力部分を大きくする */
+    padding: 10px;
+}
+
+/* focusは入力状態を表す */
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus {
+    /* 入力状態の時の枠線を消す */
+    outline: none;
+    /* 入力状態の時、境界の下部分に水色の線を引く */
+    border-bottom: solid 1px rgb(147, 238, 240);
+    /* 内側の余白を広げ、入力状態の時も入力部分を大きくする */
+    padding: 10px;
+}
+
+/*
+クラス名を半角スペースで区切ったものは、複数のクラス名になる。
+class="form-group btn"はform-groupとbtn両方のクラスが付与されたもの
+複数のクラスが付与されたものは .form-group.btn で指定し、半角スペースで区切らない
+ */
+.form-group.btn{
+    /* 要素の中身を右揃えにし、登録ボタンを右に寄せる */
+    text-align: right;
+}
+
+/* 登録ボタン */
+.form-group.btn input{
+    /* 背景色 */
+    background-color: #6495ed;
+    /* 上下に5px 左右に15px大きくする */
+    padding: 5px 15px;
+    text-decoration: none;
+    /* 文字色を白に */
+    color: white;
+    /* 丸みをつける */
+    border-radius: 5px;
+    /* 影をつけて立体感をつける */
+    box-shadow: 1px 1px #d3d3d3;
+    /* 境界の線を消す */
+    border: none;
+    margin-right: 5px;
+}
+
+/* ボタンのマウスオーバー */
+.form-group.btn input:hover {
+    /* 背景色 */
+    background-color: #eb691e;
+}

@@ -1,0 +1,63 @@
+main{
+    width: 900px;
+    /* 全体の要素を中央に揃える時にwidthとセットで使う。 */
+    margin: auto;
+}
+
+.cards{
+    /* cardsクラスのdivを横並びに */
+    display: flex;
+    /* 自動的に折り返す */
+    flex-wrap: wrap;
+}
+
+.card{
+    /* cardの横幅を調整 */
+    width: 400px;
+    /* カードに影をつける */
+    box-shadow: 6px 5px #e2e2e2;
+    /* カードに丸みをつける */
+    border-radius: 6px;
+    /* 隣のカードと若干重なってしまっているので、右側に余白をつける */
+    margin-right: 20px;
+    /* 下のカードと少し距離を開ける為、下側に余白をつける */
+    margin-bottom: 30px;
+    /* 全体的な余白（見やすいようにcard自体を少し大きくするため、内側の余白）をつける */
+    padding: 5px;
+    /* カードに輪郭をつける為、境界部分に線を引く */
+    border: solid 1px #cacaca;
+    /* 中身のテキストを中央揃えにする */
+    text-align: center;
+}
+
+/* カードのリンク部分 */
+.card a{
+    /* リンクテキストの背景色を青に */
+    background-color: cornflowerblue;
+    /* 上下に10px , 左右に25px 内側の余白を作り、リンク部分を大きくする*/
+    padding: 10px 25px;
+    /* リンクテキストの装飾を無効にし、リンクの下線をなくす */
+    text-decoration: none;
+    /* リンクテキストの文字色を白に変更 */
+    color: white;
+    /* リンク部分の形に丸みを持たせる */
+    border-radius: 5px;
+    /* リンク部分に影をつける */
+    box-shadow: 1px 1px lightgray;
+    /* 境界を消す*/
+    border: none;
+    /* 右側に少し外側余白を持たせる事で、相対的にリンクの位置を少し左側に寄せる */
+    margin-right: 5px;
+    /* リンクはinlineなのでブロックを占有出来ずカードの上に乗せた状態になってしまう */
+    /* inline-blockに変更する事でカードの中に納まるようにする */
+    display: inline-block;
+}
+
+/* cardの段落部分（説明書き） */
+.card p{
+    /* カード内部の説明テキストを左寄せにする */
+    text-align: left;
+    /* 内側の余白をつけて、テキストの位置を調整する */
+    padding: 0px 20px;
+}
+

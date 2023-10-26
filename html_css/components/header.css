@@ -1,0 +1,53 @@
+/* bodyの余白をなくしてしっかり端っこまで表示されるようにする */
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* ヘッダー部分を横表示（flex）に */
+header{
+    /* 横並びに */
+    display: flex;
+    /* 横並びの仕方 */
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* 縦10px 横30pxの余白 */
+    padding: 10px 30px;
+    /* ヘッダ部分の背景色 */
+    background-color: gray;
+}
+
+/* 見出し部分の余白を0に */
+h1{
+    margin: 0;
+}
+
+/* リンクの下線を消す */
+a{
+    text-decoration: none;
+}
+
+/* 見出しのリンクを水色に */
+h1 a{
+    color: aquamarine
+}
+
+/* リスト部分 */
+ul{
+    /* 横にリスト表示 */
+    display: flex;
+    /* リストの点を非表示 */
+    list-style: none;
+}
+
+/* リストの要素 */
+ul li{
+    /* 右部分に余白を20px */
+    margin-right: 20px;
+}
+
+/* リストの要素のリンクを白文字に */
+ul li a{
+    color: white;
+}

@@ -1,0 +1,9 @@
+ul{
+    /* flexbox:横並びのリストの為に必要 */
+    display: flex;
+    list-style: none;
+}
+
+li{
+    width: 80px;
+}
