@@ -1,0 +1,86 @@
+/* common:共通 */
+body {
+    /* body部分の余白をなくし、全面をbodyに */
+    margin: 0px;
+    /* body部分の背景色を薄い桃色に */
+    background-color: rgb(248, 238, 238);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header {
+    /* ヘッダー部分を白に */
+    background-color: rgb(253, 249, 249);
+    /* ヘッダー部分に余白をつける */
+    padding: 8px;
+}
+
+
+header p {
+    /* ヘッダーのテキストを中央寄せ */
+    text-align: center;
+    /* marginを一旦全て0pxにし、下に少し余白をつける */
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+/* 見出し */
+h2 {
+    /* 背景色を青に */
+    background-color: rgb(131, 167, 245);
+    /* background-color: #46b8ec; */
+    /* 影をつける */
+    box-shadow: 2px 2px #a9a9a9;
+    /* 丸みをつける */
+    border-radius: 8px;
+    /* 文字を中央揃え */
+    text-align: center;
+    /* 文字色を白に */
+    color: rgb(216, 216, 216);
+    /* color: white; */
+    /* 文字の大きさを20pxに */
+    font-size: 20px;
+    /* h2はデフォルトで太文字の為、細くする。 */
+    font-weight: 100;
+}
+
+/* body説明書き部分 */
+.container {
+    /* widthとmargin 0 auto はセット*/
+    /* 中央揃え */
+    width: 800px;
+    margin: 0 auto;
+    /* 内側の余白を上下10,左右20px */
+    padding: 10px 20px;
+    /* 背景色を白に */
+    background-color: white;
+}
+
+/* お知らせ部分を赤枠で囲む*/
+.notice {
+    padding: 10px;
+    border: solid 2px red;
+}
+
+/* 注意書き部分の文字を大きくし、文字色を赤色にして目立たせる */
+p.warning {
+    color: red;
+    font-size: 18px;
+}
+
+/* フッターの背景色と余白 */
+footer {
+    background-color: rgb(253, 249, 249);
+    padding: 8px;
+}
+
+/* 文字を中央揃えにし、余白をつける */
+footer p {
+    text-align: center;
+    margin: 0px;
+    /* margin: 0px 10px; */
+    margin-bottom: 3px;
+}

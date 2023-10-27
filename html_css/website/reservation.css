@@ -1,0 +1,110 @@
+/*
+breadcrump:パンくず
+童話ヘンゼルとグレーテルの話の中で、パンをちぎって道標にしたことから
+ページ内の進捗やページの場所を表すものをパンくずリストと呼び、breadcrumpという名前をつけることがある。
+*/
+.breadcrump{
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+}
+
+.breadcrump ul{
+    /* 上下に余白を作る */
+    padding: 10px 0px;
+    /* 横並び */
+    display: flex;
+    /* 中央に集めて表示 */
+    justify-content: center;
+}
+
+.breadcrump li{
+    /* positon:absoluteの為の設定 */
+    /* relative:相対的 absolute:絶対的 */
+    position: relative;
+    /* 右に余白を開ける事でリストの次の要素との幅をあける */
+    margin-right: 13px;
+    /* リストの要素の背景色 */
+    background-color: rgb(69, 178, 189);
+    /* 文字色 */
+    color: white;
+    /* 幅 */
+    width: 100px;
+}
+
+/* リストの要素のボックスを右向きの三角形の表示に変える */
+.breadcrump li:after{
+    /* after,before疑似クラスをつけるときの定型文 */
+    content: "";
+    /* ある要素から見た時の相対的な位置を指定したい時に使う */
+    /* absoluteを付与する事で、relativeを指定した要素に対して相対的な位置を指定できる */
+    position: absolute;
+    /* （top: 0, left0）だと上の要素の左上に位置する。上の要素と同じ幅の分をleftに指定する事で、右上の被らない位置に寄せる */
+    top: 0;
+    left: 100px;
+    /* 境界のスタイルを直線に */
+    border-style: solid;
+    /* 上 右 下 左 */
+    border-width: 12px 0 12px 11.6px;
+    /* transparent:透明 */
+    border-color: transparent transparent transparent rgb(69, 178, 189);
+}
+
+.breadcrump li.active{
+    background-color: rgb(121, 69, 189);
+}
+.breadcrump li.active:after {
+    border-color: transparent transparent transparent rgb(121, 69, 189);
+}
+
+.form-input{
+    border: solid 1px #c3c3c3;
+}
+
+form label{
+    width: 150px;
+    /* inline要素のlabelタグにwidthを指定したい為、inline-blockに変更 */
+    display: inline-block;
+    padding: 11px 10px;
+    background-color: #dadada;
+}
+
+form input{
+    height: 26px;
+    width: 300px;
+}
+
+.btn-submit{
+    background-color: #41b5b5;
+    color: white;
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+    /* 高さを中身に合わせる */
+    height: auto;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px
+}
+
+.links a {
+    display: block;
+    border-top: solid 1px #c7c7c7;
+    border-bottom: solid 1px #c7c7c7;
+    margin-top: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/* フッタを下部に固定する為、mainを画面の縦サイズいっぱいにひっぱる */
+body{
+    margin: 0px;
+    background-color: rgb(248, 238, 238);
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}

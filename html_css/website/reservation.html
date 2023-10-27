@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="reservation.css">
+    </head>
+    <body>
+        <header>
+            <p>ミナトミ皮膚科</p>
+            <p>インターネット受付システム</p>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="breadcrump">
+                    <ul>
+                        <li class="active">受付</li>
+                        <li>入力内容確認</li>
+                        <li>受付完了</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="notice">
+                <p class="warning">
+                    午後からの診察をご希望の方は、12時以降ご予約をお取りください。
+                </p>
+            </div>
+
+            <h2>インターネット受付</h2>
+            <p>診察券をお持ちの方のみ、診察券番号を入力してください。</p>
+            <!-- actionは入力したデータの送り先、methodは通信方式を記述（GET or POST 基本的にはPOST） -->
+            <form action="#" method="post">
+                <div class="form-input">
+                    <label>お客様の名前</label>
+                    <!-- nameはデータを送る時につける名前  nameプロパティで指定した名前を使ってデータベースから取り出せる-->
+                    <input type="text" name="name">
+                </div>
+                <div class="form-input">
+                    <label>診察券番号</label>
+                    <input type="text" name="medical_number">
+                </div>
+                <div class="form-input">
+                    <label>お客様番号</label>
+                    <input type="text" name="phone_number">
+                </div>
+                <!-- submitタイプにすると送信ボタンを作る事が出来る。 -->
+                <input type="submit" class="btn-submit" value="次へ">
+            </form>
+
+            <div class="links">
+                <a href="index.html">前の画面へ戻る</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright©Minatomi All Rights</p>
+        </footer>
+    </body>
+</html>
