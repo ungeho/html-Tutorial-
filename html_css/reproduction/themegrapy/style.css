@@ -1,0 +1,70 @@
+/* google font hinaminchoのimport */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+
+
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.container{
+    /* 幅がある一定以上大きくなるとそれ以上大きくならない設定 */
+    max-width: 1000px;
+    /* marginをつけて中央に表示する */
+    /* widthを固定してmarginをautoにすると中央に揃えられる */
+    margin: auto;
+}
+
+.menus{
+    /* 横並び */
+    display:flex;
+    /* flexbox */
+    /* 間隔を開ける */
+    justify-content: space-between;
+    /* 下に揃える　（虫眼鏡のマークを下に寄せる） */
+    align-items: flex-end;
+}
+
+.menus ul{
+    /* 横並び */
+    display: flex;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.menus ul li{
+    margin-right: 40px;
+}
+
+.menus ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.menus ul li a:hover {
+    color: rgb(187, 149, 44);
+}
+
+/* マウスオーバー時にリストが浮かび上がるリンクに矢印を追加 */
+.menus ul li a.list::after{
+    content: "▼";
+}
+
+.menus p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* 虫眼鏡の大きさ */
+.fa-solid.fa-magnifying-glass{
+    font-size: 25px;
+}
