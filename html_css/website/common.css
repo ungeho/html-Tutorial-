@@ -39,8 +39,8 @@ h2 {
     /* 文字を中央揃え */
     text-align: center;
     /* 文字色を白に */
-    color: rgb(216, 216, 216);
-    /* color: white; */
+    /* color: rgb(216, 216, 216); */
+    color: white;
     /* 文字の大きさを20pxに */
     font-size: 20px;
     /* h2はデフォルトで太文字の為、細くする。 */

@@ -3,12 +3,12 @@ breadcrump:パンくず
 童話ヘンゼルとグレーテルの話の中で、パンをちぎって道標にしたことから
 ページ内の進捗やページの場所を表すものをパンくずリストと呼び、breadcrumpという名前をつけることがある。
 */
-.breadcrump{
+.breadcrump {
     background-color: rgb(235, 235, 235);
     text-align: center;
 }
 
-.breadcrump ul{
+.breadcrump ul {
     /* 上下に余白を作る */
     padding: 10px 0px;
     /* 横並び */
@@ -17,7 +17,7 @@ breadcrump:パンくず
     justify-content: center;
 }
 
-.breadcrump li{
+.breadcrump li {
     /* positon:absoluteの為の設定 */
     /* relative:相対的 absolute:絶対的 */
     position: relative;
@@ -32,7 +32,7 @@ breadcrump:パンくず
 }
 
 /* リストの要素のボックスを右向きの三角形の表示に変える */
-.breadcrump li:after{
+.breadcrump li:after {
     /* after,before疑似クラスをつけるときの定型文 */
     content: "";
     /* ある要素から見た時の相対的な位置を指定したい時に使う */
@@ -49,56 +49,58 @@ breadcrump:パンくず
     border-color: transparent transparent transparent rgb(69, 178, 189);
 }
 
-.breadcrump li.active{
+.breadcrump li.active {
     background-color: rgb(121, 69, 189);
 }
+
 .breadcrump li.active:after {
     border-color: transparent transparent transparent rgb(121, 69, 189);
 }
 
-.form-input{
-    border: solid 1px #c3c3c3;
+
+table{
+    /* 境界は外枠部分 */
+    border: solid 1px;
+    border-color: rgb(212, 211, 211);
+    /* セルの線を重ねる */
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
 }
 
-form label{
-    width: 150px;
-    /* inline要素のlabelタグにwidthを指定したい為、inline-blockに変更 */
-    display: inline-block;
-    padding: 11px 10px;
-    background-color: #dadada;
+
+th,td{
+    height: 40px;
+    padding-left: 15px;
+    border: solid 1px rgb(212, 211, 211);
+    text-align: left;
 }
 
-form input{
-    height: 26px;
-    width: 300px;
+th{
+    width: 135px;
+    background-color: rgb(238, 238, 238);
 }
 
-.btn-submit{
-    background-color: #41b5b5;
-    color: white;
-    margin-top: 20px;
-    width: 100px;
-    padding: 10px;
-    /* 高さを中身に合わせる */
-    height: auto;
-    border-radius: 6px;
-    border: none;
-    font-size: 17px
+td{
+    font-weight: bold;
 }
 
-.links a {
-    display: block;
-    border-top: solid 1px #c7c7c7;
-    border-bottom: solid 1px #c7c7c7;
-    margin-top: 15px;
-    padding: 10px;
+.close{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: White;
+    background-color: rgb(100, 100, 100);
     text-decoration: none;
+    padding: 6px 30px;
+    margin-top: 10px;
+    border-radius: 8px;
 }
-
-
 
 /* フッタを下部に固定する為、mainを画面の縦サイズいっぱいにひっぱる */
-body{
+body {
     margin: 0px;
     background-color: rgb(248, 238, 238);
     display: flex;
@@ -106,6 +108,6 @@ body{
     min-height: 100vh;
 }
 
-main{
+main {
     flex-grow: 1;
 }
